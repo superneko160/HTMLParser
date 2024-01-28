@@ -1,0 +1,10 @@
+version: '3'
+services:
+  html-parser:
+    container_name: html-parser
+    image: node:18
+    tty: true
+    volumes:
+      - .:/home/node/app
+    ports:
+      - "5173:5173"
